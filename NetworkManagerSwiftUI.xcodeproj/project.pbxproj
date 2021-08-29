@@ -11,6 +11,7 @@
 		D44A472A26DBBE43008F1FD7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44A472926DBBE43008F1FD7 /* ContentView.swift */; };
 		D44A472C26DBBE44008F1FD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D44A472B26DBBE44008F1FD7 /* Assets.xcassets */; };
 		D44A472F26DBBE44008F1FD7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D44A472E26DBBE44008F1FD7 /* Preview Assets.xcassets */; };
+		D44A473726DBC0AB008F1FD7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44A473626DBC0AB008F1FD7 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		D44A472B26DBBE44008F1FD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D44A472E26DBBE44008F1FD7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D44A473026DBBE44008F1FD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D44A473626DBC0AB008F1FD7 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				D44A472B26DBBE44008F1FD7 /* Assets.xcassets */,
 				D44A473026DBBE44008F1FD7 /* Info.plist */,
 				D44A472D26DBBE44008F1FD7 /* Preview Content */,
+				D44A473626DBC0AB008F1FD7 /* NetworkManager.swift */,
 			);
 			path = NetworkManagerSwiftUI;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D44A473726DBC0AB008F1FD7 /* NetworkManager.swift in Sources */,
 				D44A472A26DBBE43008F1FD7 /* ContentView.swift in Sources */,
 				D44A472826DBBE43008F1FD7 /* NetworkManagerSwiftUIApp.swift in Sources */,
 			);

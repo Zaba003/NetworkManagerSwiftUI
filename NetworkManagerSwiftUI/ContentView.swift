@@ -8,14 +8,47 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var networkManager = NetworkManager()
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+        ZStack {
+            Color(.systemBlue).ignoresSafeArea()
+            VStack {
+                Image(systemName: networkManager.imageName)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 200, height: 200)
+                    .foregroundColor(.white)
+                
+                Text(networkManager.connectionDiscription)
+                    .font(.system(size: 18))
+                    .foregroundColor(.white)
+                    .multilineTextAlignment(.center)
+                    .padding()
+                
+                if !networkManager.isConnected {
+                    Button {
+                        print("Handle action...")
+                    } label: {
+                        Text("Повторить")
+                            .padding()
+                            .font(.headline)
+                            .foregroundColor(Color(.systemBlue))
+                    }
+                    .frame(width: 140)
+                    .background(Color.white)
+                    .clipShape(Capsule())
+                    .padding()
+                }
+            }
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Group {
+            ContentView()
+        }
     }
 }
